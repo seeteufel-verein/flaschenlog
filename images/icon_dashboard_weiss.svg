@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1024 1024"
+     width="1024" height="1024"
+     fill="none">
+
+  <!-- Farbe: #ffffff, Zentrum: exakt (512, 512) -->
+
+  <!-- 1. Äußerer Gauge-Körper: oben rund, unten flach abgeschnitten -->
+  <path fill="#ffffff"
+        d="M 512 180
+           C 328.7 180 180 328.7 180 512
+           C 180 646 248 740 326 780
+           L 698 780
+           C 776 740 844 646 844 512
+           C 844 328.7 695.3 180 512 180
+           Z"/>
+
+  <!-- 2. Innerer weißer Kreis (Negativraum) -->
+  <circle fill="#120b5e" cx="512" cy="512" r="190"/>
+
+  <!-- 3. Skalenstriche: Alle mit gleichem Abstand zum äußeren Ring -->
+  <!-- Radius der Ticks: Start 135, Ende 165. Weißer Kreis hat r=190. -->
+
+  <!-- 12 Uhr (oben) -->
+  <line x1="512" y1="347" x2="512" y2="377"
+        stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <!-- 1 Uhr (oben rechts) -->
+  <line x1="594.5" y1="365" x2="579.5" y2="390.5"
+        stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <!-- 2 Uhr (rechts oben) -->
+  <line x1="659" y1="428.5" x2="634" y2="442.5"
+        stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <!-- 3 Uhr (rechts) -->
+  <line x1="677" y1="512" x2="647" y2="512"
+        stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <!-- 4 Uhr (rechts unten) -->
+  <line x1="659" y1="595.5" x2="634" y2="581.5"
+        stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <!-- 5 Uhr (unten rechts) -->
+  <line x1="594.5" y1="659" x2="579.5" y2="633.5"
+        stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <!-- 6 Uhr (unten) -->
+  <line x1="512" y1="677" x2="512" y2="647"
+        stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <!-- 7 Uhr (unten links) -->
+  <line x1="429.5" y1="659" x2="444.5" y2="633.5"
+        stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <!-- 8 Uhr (links unten) -->
+  <line x1="365" y1="595.5" x2="390" y2="581.5"
+        stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <!-- 9 Uhr (links) -->
+  <line x1="347" y1="512" x2="377" y2="512"
+        stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <!-- 10 Uhr (links oben) -->
+  <line x1="365" y1="428.5" x2="390" y2="442.5"
+        stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+  <!-- 11 Uhr (oben links) -->
+  <line x1="429.5" y1="365" x2="444.5" y2="390.5"
+        stroke="#ffffff" stroke-width="24" stroke-linecap="round"/>
+
+  <!-- 4. Zeiger (Nadel): breite Basis im Zentrum, spitz zulaufend, gekürzt -->
+  <!-- Startet breit bei (512,512), Spitze nun bei (615, 405) statt (655,375) -->
+  <path fill="#ffffff"
+        d="M 495 512
+           L 535 475
+           L 615 405
+           L 545 505
+           Z"/>
+
+  <!-- 5. Mittelpunkt: komplett gefüllter Kreis -->
+  <circle fill="#ffffff" cx="512" cy="512" r="40"/>
+
+  <!-- 6. Drei Kacheln -->
+  <rect fill="#ffffff" x="140" y="810" width="210" height="120" rx="16"/>
+  <rect fill="#ffffff" x="407" y="810" width="210" height="120" rx="16"/>
+  <rect fill="#ffffff" x="674" y="810" width="210" height="120" rx="16"/>
+
+</svg>
